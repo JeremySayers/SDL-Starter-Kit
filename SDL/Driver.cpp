@@ -36,7 +36,7 @@ int main(int, char**){
 	//*********** Image Loading  *******************
 	//*****(Declare outside of main for global)*****
 	//**********************************************
-	tex = load_Texture("Test.png", ren);
+	tex = load_Texture("images/Test.png", ren);
 
 	//**********************************************
 	//************* Calling Game_Loop **************
