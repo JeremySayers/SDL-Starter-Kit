@@ -1,14 +1,18 @@
-﻿Build started 2/28/2015 3:28:21 PM.
-     1>Project "C:\Users\Jeremy\Documents\GitHub\SDL-Starter-Kit\SDL\SDL.vcxproj" on node 2 (Build target(s)).
+﻿Build started 3/5/2015 4:23:17 PM.
+     1>Project "C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\SDL\SDL.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Jeremy\Documents\GitHub\SDL-Starter-Kit\\Libraries\SDL2_image-2.0.0\include" /I"C:\Users\Jeremy\Documents\GitHub\SDL-Starter-Kit\\Libraries\SDL2-2.0.3\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Driver.cpp
-         Driver.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\\Libraries\SDL2_image-2.0.0\include" /I"C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\\Libraries\SDL2-2.0.3\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp Main.cpp
+         Main.cpp
+         Game.cpp
+         Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jeremy\Documents\GitHub\SDL-Starter-Kit\Debug\SDL.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Jeremy\Documents\GitHub\SDL-Starter-Kit\\Libraries\SDL2-2.0.3\lib\x86" /LIBPATH:"C:\Users\Jeremy\Documents\GitHub\SDL-Starter-Kit\\Libraries\SDL2_image-2.0.0\lib\x86" SDL2.lib SDL2main.lib SDL2_image.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Jeremy\Documents\GitHub\SDL-Starter-Kit\Debug\SDL.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Jeremy\Documents\GitHub\SDL-Starter-Kit\Debug\SDL.lib" /MACHINE:X86 Debug\Driver.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\Debug\SDL.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\\Libraries\SDL2-2.0.3\lib\x86" /LIBPATH:"C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\\Libraries\SDL2_image-2.0.0\lib\x86" SDL2.lib SDL2main.lib SDL2_image.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\Debug\SDL.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\Debug\SDL.lib" /MACHINE:X86 Debug\Game.obj
+         Debug\Main.obj
+         LINK : C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\Debug\SDL.exe not found or not built by the last incremental link; performing full link
      1>MSVCRTD.lib(cinitexe.obj) : warning LNK4098: defaultlib 'msvcrt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
-         SDL.vcxproj -> C:\Users\Jeremy\Documents\GitHub\SDL-Starter-Kit\Debug\SDL.exe
-     1>Done Building Project "C:\Users\Jeremy\Documents\GitHub\SDL-Starter-Kit\SDL\SDL.vcxproj" (Build target(s)).
+         SDL.vcxproj -> C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\Debug\SDL.exe
+     1>Done Building Project "C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\SDL\SDL.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.64
+Time Elapsed 00:00:01.42
