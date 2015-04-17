@@ -42,6 +42,32 @@ void Game::render_Texture(SDL_Texture *tex, SDL_Renderer *ren, int x, int y){
 	render_Texture(tex, ren, x, y, w, h);
 }
 
+//This is where the font magic happens, simply pass in the message, font, color, font size and a reference to
+//the renderer (in the case of the project game.ren) and then it will return a texture of the font so that you can
+//paint it to the screen as if it were an image.
+SDL_Texture* Game::render_Text(const std::string &message, const std::string &fontFile, SDL_Color color, int fontSize, SDL_Renderer *renderer) {
+	//Open the font
+	
+	TTF_Font *font = TTF_OpenFont(fontFile.c_str(), fontSize);
+
+	//We need to first render to a surface as that's what TTF_RenderText
+	//returns, then load that surface into a texture
+	SDL_Surface *surf = TTF_RenderText_Blended(font, message.c_str(), color);
+
+	SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, surf);
+
+	//Clean up the surface and font
+	SDL_FreeSurface(surf);
+	TTF_CloseFont(font);
+	return texture;
+}
+
+//This is a very simple function to grab the current working directory and
+//then return it as a string.
+std::string Game::get_Directory(){
+	std::string s(SDL_GetBasePath());
+	return s;
+}
 //Helper function for creating the SDL window. You can change the
 //title of the window and the size and the position here.
 SDL_Window* Game::load_SDL_Window(){
@@ -73,6 +99,9 @@ void Game::load_SDL_Libraries(){
 	}
 	if ((IMG_Init(IMG_INIT_PNG) & IMG_INIT_PNG) != IMG_INIT_PNG){
 		std::cout << "SDL_Image_Init Error: " << SDL_GetError() << std::endl;
+		SDL_Quit();
+	}
+	if (TTF_Init() != 0){
 		SDL_Quit();
 	}
 }

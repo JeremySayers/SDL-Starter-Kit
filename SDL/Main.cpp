@@ -1,6 +1,10 @@
 #include "Game.h"
+#include <sstream>
 
 SDL_Texture *tex;
+SDL_Texture *image;
+SDL_Texture *mouse_pos_font;
+SDL_Color color;
 SDL_Event e;
 
 bool running = true;
@@ -12,12 +16,19 @@ void game_loop(SDL_Renderer *);
 void paint_loop(SDL_Renderer *);
 void event_loop();
 
+//*NOTE*
+//To get access to the console, make sure you run the program in Debug instead of release, when doing so
+//a command prompt will pop up along with the SDL window.
 int main(int, char**){
 	//To load an image you first declare the texture with:
 	//SDL_Texture *texture_name, as seen above the int main function.
 	//Then you call the load_Texture function with the relative image
 	//path, and a reference to the renderer.
-	tex = game.load_Texture("images/Test.png", game.ren);
+	tex = game.load_Texture(game.get_Directory() + "images/Test.png", game.ren);
+
+	//We set a color here for use in creating font textures such as in the mouse move
+	//event where we create a text image of the current mouse X and Y.
+	color = { 0, 255, 0, 125 };
 
 	//After all of the basic setup, the game_loop is called with a
 	//reference to the renderer. This is where all of the magic happens
@@ -58,7 +69,9 @@ void game_loop(SDL_Renderer *ren){
 //where you would paint your player or enemies textures, or the map tiles using
 //the render_Texture function to set the location and optionally the size of the image.
 void paint_loop(SDL_Renderer * ren){
-	game.render_Texture(tex, ren, 100, 100);
+	game.render_Texture(tex, ren, 150, 150);
+	//This is is where we render the mouse X and Y position as stated below in the event loop.
+	game.render_Texture(mouse_pos_font, ren, 0, 0);
 }
 
 //The event loop. This will check the queue of events every time
@@ -71,6 +84,15 @@ void event_loop(){
 		}
 		if (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE){
 			running = false;
+		}
+		//Shows the basic use of an event to report information to the screen.
+		//In this case whenever the mouse moves we take its X and Y location,
+		//render it into a text, and then it gets rendered to the screen during
+		//the next paint loop!
+		if (e.type == SDL_MOUSEMOTION){
+			std::stringstream info;
+			info << "Mouse X: " << e.motion.x << "   Y: " << e.motion.y;
+			mouse_pos_font = game.render_Text(info.str(), game.get_Directory() + "sample.ttf", color, 16, game.ren);
 		}
 	}
 }

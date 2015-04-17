@@ -1,16 +1,17 @@
-﻿Build started 3/5/2015 4:54:31 PM.
-     1>Project "C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\SDL\SDL.vcxproj" on node 2 (Build target(s)).
+﻿Build started 4/17/2015 2:54:56 AM.
+     1>Project "C:\Users\Jeremy\Desktop\BattleShips\SDL-Starter-Kit-master\SDL\SDL.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\\Libraries\SDL2_image-2.0.0\include" /I"C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\\Libraries\SDL2-2.0.3\include" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Jeremy\Desktop\BattleShips\SDL-Starter-Kit-master\\Libraries\SDL2_image-2.0.0\include" /I"C:\Users\Jeremy\Desktop\BattleShips\SDL-Starter-Kit-master\\Libraries\SDL2_ttf-2.0.12\include" /I"C:\Users\Jeremy\Desktop\BattleShips\SDL-Starter-Kit-master\\Libraries\SDL2-2.0.3\include" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp Main.cpp
          Game.cpp
+         Main.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\Release\SDL.exe" /NOLOGO /LIBPATH:"C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\\Libraries\SDL2-2.0.3\lib\x86" /LIBPATH:"C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\\Libraries\SDL2_image-2.0.0\lib\x86" SDL2.lib SDL2main.lib SDL2_image.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\Release\SDL.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\Release\SDL.lib" /MACHINE:X86 /SAFESEH Release\Game.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jeremy\Desktop\BattleShips\SDL-Starter-Kit-master\Release\SDL.exe" /NOLOGO /LIBPATH:"C:\Users\Jeremy\Desktop\BattleShips\SDL-Starter-Kit-master\\Libraries\SDL2-2.0.3\lib\x86" /LIBPATH:"C:\Users\Jeremy\Desktop\BattleShips\SDL-Starter-Kit-master\\Libraries\SDL2_image-2.0.0\lib\x86" /LIBPATH:"C:\Users\Jeremy\Desktop\BattleShips\SDL-Starter-Kit-master\\Libraries\SDL2_ttf-2.0.12\lib\x86" SDL2.lib SDL2main.lib SDL2_image.lib SDL2_ttf.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Jeremy\Desktop\BattleShips\SDL-Starter-Kit-master\Release\SDL.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Jeremy\Desktop\BattleShips\SDL-Starter-Kit-master\Release\SDL.lib" /MACHINE:X86 /SAFESEH Release\Game.obj
          Release\Main.obj
          Generating code
          Finished generating code
-         SDL.vcxproj -> C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\Release\SDL.exe
-     1>Done Building Project "C:\Users\jsayers\Downloads\SDL-Starter-Kit-master\SDL-Starter-Kit-master\SDL\SDL.vcxproj" (Build target(s)).
+         SDL.vcxproj -> C:\Users\Jeremy\Desktop\BattleShips\SDL-Starter-Kit-master\Release\SDL.exe
+     1>Done Building Project "C:\Users\Jeremy\Desktop\BattleShips\SDL-Starter-Kit-master\SDL\SDL.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.87
+Time Elapsed 00:00:01.10
